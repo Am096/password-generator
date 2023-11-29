@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     background-color: #1C1C1C;
@@ -31,7 +32,10 @@ html, body {
     /* align-items: start; */
     padding-left: 65px;
     padding-top: 50px;
+
 }
+
+
 #header {
     padding-bottom: 15px;
 }
@@ -41,6 +45,7 @@ html, body {
     font-size: 30px;
     font-weight: bold;
 }
+
 #header p {
     color: #FFFFFF;
     font-size: 18px;
@@ -52,6 +57,89 @@ html, body {
 }
 
 input[type="range"] {
-    width : 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+#slider {
+    padding-bottom: 25px;
+}
+
+#slider p {
+    color: #FFFFFF;
+}
+
+#colored-slider {
+    color: #55F991;
+    font-weight: bold;
+}
+
+#generate-btn button {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+}
+
+#generate-btn button:hover {
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    color: #10B981;
+    cursor: pointer;
+}
+
+.ri-key-fill {
+    padding-right: 15px;
+}
+
+#line {
+    width: 90%;
+    height: 2px;
+    background-color: rgb(46, 58, 76);
+    margin-top: 30px;
+}
+
+#lower {
+    width: 100%;
+    height: 35%;
+    padding-left: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pass-boxes {
+    width: 200px;
+    height: 40px;
+    background-color: #273549;
+    color: #55F991;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upper-pass-boxes {
+    display: flex;
 
 }
+
+#generated-password-one {
+    margin-right: 37px;
+}
+
+#lower-pass-boxes {
+    display: flex;
+}
+
+#generated-password-three {
+    margin-right: 37px;
+}
+
