@@ -123,7 +123,8 @@ input[type="range"] {
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+    cursor: pointer;
 }
 
 #upper-pass-boxes {

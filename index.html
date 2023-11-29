@@ -31,11 +31,11 @@
 
         <div id="slider">
           <p id="sliderValue">Length: <span id="colored-slider">8</span></p>
-          <input type="range" id="rangeSlider" min="8" max="12" value="8" />
+          <input type="range" id="rangeSlider" min="8" max="20" value="8" />
         </div>
 
         <div id="generate-btn">
-          <button>
+          <button onclick="generatePasswords()">
             <span><i class="ri-key-fill"></i>Generate Password!</span>
           </button>
         </div>
@@ -46,18 +46,18 @@
       <div id="lower">
         <div id="upper-pass-boxes">
           <div class="pass-boxes" id="generated-password-one">
-            <p id="passwordOne">TEST1</p>
+            <div id="passwordOne"></div>
           </div>
           <div class="pass-boxes" id="generated-password-two">
-            <p id="passwordTwo">TEST2</p>
+            <div id="passwordTwo"></div>
           </div>
         </div>
         <div id="lower-pass-boxes">
           <div class="pass-boxes" id="generated-password-three">
-            <p id="passwordThree">TEST3</p>
+            <div id="passwordThree"></div>
           </div>
           <div class="pass-boxes" id="generated-password-four">
-            <p id="passwordFour">TEST4</p>
+            <div id="passwordFour"></div>
           </div>
         </div>
       </div>
