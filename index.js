@@ -34,3 +34,27 @@ function generatePasswords() {
   passwordThree.textContent = passwordArr[2];
   passwordFour.textContent = passwordArr[3];
 }
+
+function copyToClipboard(elementID) {
+  let copyText = document.getElementById(elementID);
+  let msgEl = document.getElementById("msg");
+
+  if (!copyText.hasChildNodes()) {
+    console.warn('Element is empty. Nothing to copy.');
+    msgEl.textContent = "";
+    return;
+  }
+
+  let tempTextarea = document.createElement('textarea');
+  tempTextarea.value = copyText.innerText;
+  document.body.appendChild(tempTextarea);
+  tempTextarea.select();
+  tempTextarea.setSelectionRange(0, 99999); 
+  try {
+    document.execCommand('copy');
+    msgEl.textContent = "PASSWORD COPIED TO CLIPBOARD!";
+  } catch (err) {
+    console.error('Unable to copy to clipboard', err);
+  }
+  document.body.removeChild(tempTextarea);
+}

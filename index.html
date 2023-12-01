@@ -45,21 +45,23 @@
 
       <div id="lower">
         <div id="upper-pass-boxes">
-          <div class="pass-boxes" id="generated-password-one">
+          <div class="pass-boxes" id="generated-password-one" onclick="copyToClipboard('generated-password-one')">
             <div id="passwordOne"></div>
           </div>
-          <div class="pass-boxes" id="generated-password-two">
+          <div class="pass-boxes" id="generated-password-two"  onclick="copyToClipboard('generated-password-two')">
             <div id="passwordTwo"></div>
           </div>
         </div>
         <div id="lower-pass-boxes">
-          <div class="pass-boxes" id="generated-password-three">
-            <div id="passwordThree"></div>
+          <div class="pass-boxes" id="generated-password-three" onclick="copyToClipboard('generated-password-three')" >
+            <div id="passwordThree" ></div>
           </div>
-          <div class="pass-boxes" id="generated-password-four">
+          <div class="pass-boxes" id="generated-password-four"  onclick="copyToClipboard('generated-password-four')">
             <div id="passwordFour"></div>
           </div>
         </div>
+        <div id="msg"></div>
+   
       </div>
     </div>
   </body>

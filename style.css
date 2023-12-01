@@ -144,3 +144,8 @@ input[type="range"] {
     margin-right: 37px;
 }
 
+#msg {
+    margin-left: 65px;
+    margin-right: auto;
+}
+
