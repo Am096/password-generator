@@ -53,6 +53,9 @@ function copyToClipboard(elementID) {
   try {
     document.execCommand('copy');
     msgEl.textContent = "PASSWORD COPIED TO CLIPBOARD!";
+    setTimeout(function(){
+      msgEl.textContent = "";
+    },1000)
   } catch (err) {
     console.error('Unable to copy to clipboard', err);
   }
